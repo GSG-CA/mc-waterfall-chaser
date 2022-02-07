@@ -30,7 +30,7 @@ function waterfall(arg, tasks, cb) {
   const currentTask = tasks[0];
   const restOfTasks = tasks.slice(1);
 
-  const nextAction = newArg => waterfall(nextArg, restOfTasks, cb);
+  const nextAction = nextArg => waterfall(nextArg, restOfTasks, cb);
   currentTask(arg, nextAction)
 }
 ```
@@ -53,7 +53,7 @@ function waterfall(arg, tasks, cb) {
   const currentTask = tasks[0];
   const restOfTasks = tasks.slice(1);
 
-  const nextAction = newArg => waterfall(nextArg, restOfTasks, cb);
+  const nextAction = nextArg => waterfall(nextArg, restOfTasks, cb);
   currentTask(arg, nextAction)
 }
 ```
