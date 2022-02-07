@@ -70,6 +70,8 @@ asyncAddOne(3, res => {
 
 The waterfall function, abstracts all these function calls (assuming we have any number of functions passed) and hides the cb hell that you see above.
 
+### HINT: :thought_balloon:	:bomb:	:collision:	Think about recursion.
+
 ### Glossary:
 
 - [Compose function](http://blakeembrey.com/articles/2014/01/compose-functions-javascript/)
